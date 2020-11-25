@@ -16,12 +16,14 @@ header{
 }
 
 #logo{
+    
     display: flex;
     align-items: center;
 }
 
 #logo img{
     height: 3rem;
+    
 
 }
 
@@ -92,6 +94,9 @@ a{
 .cripto-banner{
     max-width: 100%;
     border: 1;
+    -webkit-border-radius: 22px;
+-moz-border-radius: 12px;
+border-radius: 12px;
     
 }
 
