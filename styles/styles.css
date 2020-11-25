@@ -1,0 +1,120 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 5rem;
+    height: 4rem;
+    background-color: white;
+
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+#logo img{
+    height: 3rem;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    font-size: 1rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 100%;
+    color: #474747
+}
+
+.opciones{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 7rem;
+    justify-content: space-between;
+}
+
+#search{
+    width: 1.75rem;
+}
+
+.opciones img:first-child{
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+#user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+
+.logo{
+    width: 120px ;
+    max-height: 100%;
+}
+
+
+.intro{
+    text-align: center;
+}
+
+.cripto-banner{
+    max-width: 100%;
+    border: 1;
+    
+}
+
+table th {
+    text-align: center;
+}
+
+
+.about-link{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+
+}
+
+td{
+    text-align: center ;
+}
+
+.about-bitcoin{
+    text-align: center;
+}
+
+.form-contact{
+    text-align: center;
+}
+
+#volver-inicio{
+    color: rgb(151, 73, 8);
+    text-decoration: none;
+}
