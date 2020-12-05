@@ -2,8 +2,6 @@
 const alerta = document.getElementById('alertaIntentos');
 const pistas = document.getElementById('pistas');
 
-let respuestaUser = document.getElementById("userRespuesta").value;
-
 const respuestaCorrecta = "nakamoto"
 
 var intentos =  5;
@@ -11,6 +9,8 @@ var ganaste = false;
 
 
 function validarRespuesta() {
+
+    var respuestaUser = document.getElementById("userRespuesta").value;
 
     if (respuestaCorrecta == respuestaUser && intentos >= 1) {
         ganaste = true;
@@ -59,6 +59,11 @@ function victoria() {
     alerta.innerHTML = "¡FELICIDADES HAS RESPONDIDO CORRECTAMENTE!";
     alerta.classList.add("alert-success")
     alerta.classList.remove("alert-info")
+    alerta.classList.remove("alert-dark")
+    alerta.classList.remove("alert-secondary")
+    alerta.classList.remove("alert-warning")
+    alerta.classList.remove("alert-danger")
+
 }
 
 function derrota() {
