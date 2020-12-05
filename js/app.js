@@ -2,16 +2,15 @@
 const alerta = document.getElementById('alertaIntentos');
 const pistas = document.getElementById('pistas');
 
+let respuestaUser = document.getElementById("userRespuesta").value;
+
 var intentos =  5;
 var ganaste = false;
 
 
 function validarRespuesta() {
-    event.preventDefault();
 
     const respuestaCorrecta = "nakamoto"
-    let respuestaUser = document.getElementById("userRespuesta").value;
-
 
     if (respuestaCorrecta == respuestaUser && intentos >= 1) {
         ganaste = true;
