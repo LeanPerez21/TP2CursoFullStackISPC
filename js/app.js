@@ -4,13 +4,13 @@ const pistas = document.getElementById('pistas');
 
 let respuestaUser = document.getElementById("userRespuesta").value;
 
+const respuestaCorrecta = "nakamoto"
+
 var intentos =  5;
 var ganaste = false;
 
 
 function validarRespuesta() {
-
-    const respuestaCorrecta = "nakamoto"
 
     if (respuestaCorrecta == respuestaUser && intentos >= 1) {
         ganaste = true;
@@ -18,7 +18,7 @@ function validarRespuesta() {
         intentos = 0;
     } else if (respuestaCorrecta !== respuestaUser && intentos == 5) {
         intentos = intentos - 1
-        alerta.innerHTML = "Respuesta equiocada, cuidado... te quedan 4 intentos";
+        alerta.innerHTML = "Respuesta equivocada, cuidado... te quedan 4 intentos";
         alerta.classList.add("alert-dark")
         alerta.classList.remove("alert-info")
         
